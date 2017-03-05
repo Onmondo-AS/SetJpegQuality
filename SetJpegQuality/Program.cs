@@ -64,7 +64,7 @@ namespace SetJpegQuality {
                 showHelp();
             }
             else {
-                string sqlStr = "SELECT SiteID FROM tblSites where SiteState <> 2 " + (siteList_.Trim().Length > 0 ? "AND SiteID in(" + siteList_ + ") " : "") + "ORDER BY SiteID";
+                string sqlStr = "SELECT SiteID FROM tblSites where SiteState <> 2 " + (siteList_.Trim().Length > 0 ? "AND SiteID in(" + siteList_ + ") " : "");
                 MiniSite.DAL.Sites.tblSitesDataTable sites = MiniSite.DAL.DataStore.GetSites(sqlStr);
                 foreach (MiniSite.DAL.Sites.tblSitesRow rowSite in sites.Rows) {
                     Work(rowSite);

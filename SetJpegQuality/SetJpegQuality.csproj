@@ -35,6 +35,26 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CookComputing.XmlRpc, Version=2.4.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\CookComputing.XmlRpc.dll</HintPath>
+    </Reference>
+    <Reference Include="Economic.Api, Version=1.4.16.0, Culture=neutral, PublicKeyToken=0b95ee7ebdda7bdd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Economic.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonParser, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\JsonParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Libidn, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Libidn.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniSite, Version=1.2.15.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\MiniSite.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -52,8 +72,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="lib\" />
+    <Content Include="lib\CookComputing.XmlRpc.dll" />
+    <Content Include="lib\Economic.Api.dll" />
+    <Content Include="lib\JsonParser.dll" />
+    <Content Include="lib\JsonParser.pdb" />
+    <Content Include="lib\Libidn.dll" />
+    <Content Include="lib\Libidn.pdb" />
+    <Content Include="lib\MiniSite.dll" />
+    <Content Include="lib\MiniSite.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
